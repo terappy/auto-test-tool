@@ -9,21 +9,21 @@
 # Execute
 
 ```
-$ sh invoke.sh ${CLASS_NAME} ${INPUT_TEXTFILE}
+$ sh test.sh ${CLASS_NAME} ${INPUT_TEXTFILE}
 ```
 or
 ```
-$ sh invoke.sh -e ${EXPECTED_RESULT_TEXTFILE} ${CLASS_NAME} ${INPUT_TEXTFILE}
+$ sh test.sh -e ${EXPECTED_RESULT_TEXTFILE} ${CLASS_NAME} ${INPUT_TEXTFILE}
 ```
 
 # example
 
 ```
-$ sh invoke.sh Main input.txt
+$ sh test.sh Main input.txt
 ```
 
 ```
-$ sh invoke.sh -e expected.txt Main input.txt
+$ sh test.sh -e expected.txt Main input.txt
 ```
 
 ```input.txt

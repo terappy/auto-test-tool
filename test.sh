@@ -21,9 +21,6 @@ if [ $# -ne 2 ]; then
   exit 1
 fi
 
-# compile the target java file.
-javac $1.java
-
 echo "---------------------"
 echo "input is":
 echo "---------------------"
@@ -36,7 +33,10 @@ echo "---------------------"
 # decide output file name.
 OUTFILE_NAME="out-$2"
 
-# execute with input file and write result to $OUTFILE_NAME
+# compile the target java file.
+javac $1.java
+
+# execute with input file and write result into $OUTFILE_NAME
 cat $2 | java $1 > $OUTFILE_NAME
 cat $OUTFILE_NAME
 
